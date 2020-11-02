@@ -1,0 +1,133 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-02-08 13:12+0100\n"
+"PO-Revision-Date: 2017-02-08 13:13+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.11\n"
+
+msgid "field.id"
+msgstr "ID"
+
+msgid "field.comment"
+msgstr "Kommentar"
+
+msgid "field.created"
+msgstr "Erstellungsdatum"
+
+msgid "field.modified"
+msgstr "Änderungsdatum"
+
+msgid "context.type.controller"
+msgstr "Controller"
+
+msgid "context.type.shell"
+msgstr "Shell"
+
+msgid "context.type.slug"
+msgstr "Slug"
+
+msgid "comment_empty"
+msgstr "kein Kommentar vorhanden"
+
+msgid "no_history"
+msgstr "Keine Historie vorhanden"
+
+msgid "table.heading.fields"
+msgstr "Felder"
+
+msgid "table.heading.actions"
+msgstr "Aktionen"
+
+msgid "model_history"
+msgstr "Model Historie"
+
+msgid "called_site"
+msgstr "Aufgerufene Seite"
+
+msgid "load_previous"
+msgstr "Vorherige Einträge laden..."
+
+msgid "diff.open_diff"
+msgstr "Änderungshistorie"
+
+msgid "load_next"
+msgstr "Nächste Einträge laden..."
+
+msgid "enter_comment"
+msgstr "Kommentar eingeben..."
+
+msgid "save"
+msgstr "Speichern"
+
+msgid "filter.fields"
+msgstr "Felder"
+
+msgid "select.choose"
+msgstr "Bitte auswählen"
+
+msgid "search.context_type"
+msgstr "Kontexttyp"
+
+msgid "search.context_slug"
+msgstr "Kontextidentifikator"
+
+msgid "search.date_from"
+msgstr "Änderungsdatum von"
+
+msgid "search.date_to"
+msgstr "Änderungsdatum bis"
+
+msgid "submit_filter"
+msgstr "Filtern"
+
+msgid "reset_filter"
+msgstr "Zurücksetzen"
+
+msgid "diff.close_button"
+msgstr "Schließen"
+
+msgid "diff.title"
+msgstr "Änderungshistorie"
+
+msgid "no_diff"
+msgstr "Keine Änderungshistorie vorhanden"
+
+msgid "diff.fieldname"
+msgstr "Feldname"
+
+msgid "diff.old_value"
+msgstr "Alter Wert"
+
+msgid "diff.new_value"
+msgstr "Neuer Wert"
+
+msgid "no_historical_data"
+msgstr "Keine historischen Daten"
+
+msgid "created"
+msgstr "erstellt"
+
+msgid "updated"
+msgstr "aktualisiert"
+
+msgid "deleted"
+msgstr "gelöscht"
+
+msgid "commented"
+msgstr "kommentiert"
+
+msgid "by"
+msgstr "von"
+
+#~ msgid "field.firstname"
+#~ msgstr "Vorname"

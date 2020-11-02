@@ -1,0 +1,31 @@
+{
+    "name": "czepter/cake-model-history",
+    "description": "ModelHistory plugin for CakePHP4",
+    "license": "MIT",
+    "type": "cakephp-plugin",
+    "extra": {
+        "installer-name": "ModelHistory"
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "cakephp/cakephp": "^4.0",
+        "phpstan/phpstan": "^0.8",
+        "cakephp/cakephp-codesniffer": "^3.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "ModelHistory\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ModelHistory\\": "src",
+            "ModelHistory\\Test\\": "tests",
+            "ModelHistory\\Test\\Fixture\\": "tests/Fixture",
+            "ModelHistoryTestApp\\": "tests/ModelHistoryTestApp"
+        }
+    }
+}

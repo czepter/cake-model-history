@@ -1,0 +1,22 @@
+language: php
+
+php:
+  - 7.1
+
+services:
+  - mysql
+
+before_script:
+  - composer self-update
+  - composer update
+  - composer install --prefer-dist
+  - mysql -uroot -e "DROP DATABASE IF EXISTS model_history_test; CREATE DATABASE model_history_test;"
+
+script:
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
+  - vendor/bin/phpcs -pn --extensions=php --ignore=./config/Migrations/* --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests ./config
+  - vendor/bin/phpcs --colors -p --ignore=./config/Migrations/* --standard=vendor/scherersoftware/coding-standard/scherersoftware ./src ./tests ./config
+  - php -d memory_limit=-1 vendor/bin/phpstan analyse -c phpstan.neon -l 1 ./src
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

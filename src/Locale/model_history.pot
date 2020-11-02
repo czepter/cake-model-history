@@ -1,0 +1,130 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-02-08 13:11+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "field.id"
+msgstr ""
+
+msgid "field.comment"
+msgstr ""
+
+msgid "field.created"
+msgstr ""
+
+msgid "field.modified"
+msgstr ""
+
+msgid "context.type.controller"
+msgstr ""
+
+msgid "context.type.shell"
+msgstr ""
+
+msgid "context.type.slug"
+msgstr ""
+
+msgid "comment_empty"
+msgstr ""
+
+msgid "no_history"
+msgstr ""
+
+msgid "table.heading.fields"
+msgstr ""
+
+msgid "table.heading.actions"
+msgstr ""
+
+msgid "model_history"
+msgstr ""
+
+msgid "called_site"
+msgstr ""
+
+msgid "load_previous"
+msgstr ""
+
+msgid "diff.open_diff"
+msgstr ""
+
+msgid "load_next"
+msgstr ""
+
+msgid "enter_comment"
+msgstr ""
+
+msgid "save"
+msgstr ""
+
+msgid "filter.fields"
+msgstr ""
+
+msgid "select.choose"
+msgstr ""
+
+msgid "search.context_type"
+msgstr ""
+
+msgid "search.context_slug"
+msgstr ""
+
+msgid "search.date_from"
+msgstr ""
+
+msgid "search.date_to"
+msgstr ""
+
+msgid "submit_filter"
+msgstr ""
+
+msgid "reset_filter"
+msgstr ""
+
+msgid "diff.close_button"
+msgstr ""
+
+msgid "diff.title"
+msgstr ""
+
+msgid "no_diff"
+msgstr ""
+
+msgid "diff.fieldname"
+msgstr ""
+
+msgid "diff.old_value"
+msgstr ""
+
+msgid "diff.new_value"
+msgstr ""
+
+msgid "no_historical_data"
+msgstr ""
+
+msgid "created"
+msgstr ""
+
+msgid "updated"
+msgstr ""
+
+msgid "deleted"
+msgstr ""
+
+msgid "commented"
+msgstr ""
+
+msgid "by"
+msgstr ""
+
