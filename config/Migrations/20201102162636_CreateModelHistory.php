@@ -1,13 +1,26 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
+
 use Migrations\AbstractMigration;
 
-class Initial extends AbstractMigration
+class CreateModelHistory extends AbstractMigration
 {
-    public function up(): void
+    private $tableName = 'model_history';
+    
+    /**
+     * Change Method.
+     *
+     * More information on this method is available here:
+     * https://book.cakephp.org/phinx/0/en/migrations.html#the-change-method
+     * @return void
+     */
+    public function up()
     {
+        $table = $this->table($this->tableName, [
+            'id' => false, 'primary_key' => ['id']
+        ]);
 
-        $this->table('model_history', ['id' => false, 'primary_key' => ['id']])
+        $table
             ->addColumn('id', 'uuid', [
                 'default' => null,
                 'limit' => null,
@@ -60,6 +73,11 @@ class Initial extends AbstractMigration
                 'limit' => 255,
                 'null' => true,
             ])
+            ->addColumn('save_hash', 'string', [
+                'default' => null,
+                'length' => 40,
+                'null' => true,
+            ])
             ->addColumn('revision', 'integer', [
                 'default' => null,
                 'limit' => 8,
@@ -71,10 +89,12 @@ class Initial extends AbstractMigration
                 'null' => true,
             ])
             ->create();
+        
     }
 
     public function down(): void
     {
-        $this->dropTable('model_history');
+        $this->table($this->$tableName)
+            ->drop;
     }
 }

@@ -1,1 +1,0 @@
-<?= $this->ModelHistory->getLocalizedSlug($historyEntry) ?>

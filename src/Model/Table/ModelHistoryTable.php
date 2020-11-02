@@ -10,6 +10,8 @@ use Cake\Utility\Inflector;
 use Cake\Validation\Validator;
 use ModelHistory\Model\Entity\ModelHistory;
 use ModelHistory\Model\Transform\Transform;
+use Cake\Database\Schema\TableSchema;
+use Cake\Database\Schema\TableSchemaInterface;
 
 /**
  * ModelHistory Model
@@ -25,15 +27,20 @@ class ModelHistoryTable extends Table
      */
     public function initialize(array $config): void
     {
-        $this->table('model_history');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('model_history');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
         $this->addBehavior('Timestamp');
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id'
         ]);
-        $this->schema()->columnType('data', 'json');
-        $this->schema()->columnType('context', 'json');
+    }
+
+    protected function _initializeSchema(\Cake\Database\Schema\TableSchemaInterface $schema): \Cake\Database\Schema\TableSchemaInterface
+    {
+        $schema->setColumnType('data', 'json');
+        $schema->setColumnType('context', 'json');
+        return $schema;
     }
 
     /**
